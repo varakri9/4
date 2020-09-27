@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/main.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+</head>
+<body>
+    <div id="bodywrap">
+        <div id="slidercover">
+            <div id="slidercontainer">
+                <div class="slidercontents">
+                    <div class="slidertext"><p>" I've been interested in coding for a while but never taken the jump, until now. I couldn't recommend this course enough. I'm mow in the job of my dreams and so excited about the future. "</p> <cite>Tanya sinclair <span>UX Engineer</span></span></cite></cite></div>
+                    <div class="sliderimg"><img src="images/image-tanya.jpg"></div>
+                </div>
+
+                <div class="slidercontents">
+                    <div class="slidertext"><p>" If you want to lay the best foundation possible i'd recomend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. "</p><cite>John Tarkpor <span>Junior front-end Developer</span></span></cite></cite></div>
+                    <div class="sliderimg" id="si2"><img src="images/image-john.jpg"></div>
+                </div>
+            </div>
+
+            <div id="nextcover"><div id="nextleft"></div><div id="nextright"></div></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var previous = document.getElementById("nextleft");
+    var next = document.getElementById("nextright");
+    var slide = document.getElementById("slidercontainer");
+
+    function navigate(){
+        next.addEventListener("click", function(){
+            slide.style = "transform: translate(-49%, 0);";
+        })
+        previous.addEventListener("click", function(){
+            slide.style = "transform: translate(0,0);";
+        })
+    }
+    window.addEventListener("load", navigate);
+    </script>
+</body>
+</html>

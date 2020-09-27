@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/pattern-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 45% 90vh;
+    background-position: 90% 30px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#bodywrap{
+    width: 100%;
+}
+#slidercover{
+    width: 90%;
+    height: 600px;
+    overflow: hidden;
+    margin: 50px auto;
+    background: url("../images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: 0 75vh;
+}
+#slidercontainer{
+    width: 2450px;
+    height: 490px;
+    display: flex;
+}
+.slidercontents{
+    width: 49%;
+    margin: 10px;
+    margin-top: 25px;
+    display: flex;
+}
+.slidertext{
+    background: url(../images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 20% 0px;
+    position: relative;
+    left: 10%;
+    top: 100px;
+    width: 50%;
+    padding: 25px;
+
+}
+.slidertext p{
+    font-size: 32px;
+    font-family: "https://fonts.google.com/specimen/Inter";
+}
+.slidertext cite{
+    font-weight: 700;
+}
+.slidertext cite span{
+    font-weight: 500;
+}
+.sliderimg{
+    width: 40%;
+    box-shadow: 2px 2px 5px hsl(240, 38%, 20%);
+    border-radius: 10px; 
+}
+#nextcover{
+    position: relative;
+    top: -20px;
+    left: 61%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 50px;
+    height: 10px;
+    box-shadow: 5px 20px 50px hsl(240, 18%, 77%);
+    z-index: 5;
+}
+#nextleft{
+    height: 10px;
+    width: 10px;
+    border: 2px solid black;
+    border-right: transparent;
+    border-bottom: transparent;
+    transform: rotate(-45deg);
+}
+#nextright{
+    height: 10px;
+    width: 10px;
+    border: 2px solid black;
+    border-left: transparent;
+    border-bottom: transparent;
+    transform: rotate(45deg);
+}
+@media(max-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url("../images/pattern-bg.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 35%;
+    }
+    #slidercontainer{
+        width: 200%;
+        height: 1000px;
+        display: flex;
+    }
+    #slidercover{
+        height: auto;
+    }
+    .slidercontents{
+        width: 50%;
+        margin: 10px;
+        margin-top: 25px;
+        display: block;
+    }
+    .slidertext{
+        background: url(../images/pattern-quotes.svg);
+        background-repeat: no-repeat;
+        background-position: 60% 40px;
+        text-align: center;
+        position: relative;
+        top: 500px;
+        left: 0;
+        width: 70%;
+        padding: 25px;
+        margin: auto;
+    }
+    .sliderimg{
+        position: relative;
+        top: -450px;
+        margin: 0px auto;
+        width: 70%;
+        box-shadow: 2px 2px 7px hsl(240, 38%, 20%); 
+    }
+    #si2{
+        transform: translate(0px, -35px);
+    }
+    #nextcover{
+        top: -670px;
+        left: 45%;
+    }
+}
+@media(max-width: 375px){
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url("../images/pattern-bg.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 30%;
+    }
+    .sliderimg{
+        position: relative;
+        top: -800px;
+        margin: 0px auto;
+        width: 80%;
+        box-shadow: 2px 2px 7px hsl(240, 38%, 20%); 
+    }
+    #si2{
+        transform: translate(0px, -99px);
+    }
+    #nextcover{
+        top: -750px;
+        left: 40%;
+    }
+    .slidertext{
+        background: url(../images/pattern-quotes.svg);
+        background-repeat: no-repeat;
+        background-position: 20% 0px;
+        position: relative;
+        left: 10%;
+        top: 300px;
+        width: 50%;
+        padding: 25px;
+    
+    }
+}
